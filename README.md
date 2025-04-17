@@ -1,15 +1,4 @@
-
-   `{cyan-fg}╭───────────────────────────────────────────────────────────────────────────────────────╮{/cyan-fg}`,
-    `{cyan-fg}│                                                                                       │{/cyan-fg}`,
-    `{green-fg}│      ██████╗ ██████╗  ██████╗ ██╗   ██╗     ██████╗ ██████╗  ██████╗ ██████╗ ███████╗ │{/green-fg}`,
-    `{green-fg}│     ██╔════╝██╔═══██╗██╔════╝ ██║   ██║    ██╔═══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝ │{/green-fg}`,
-    `{green-fg}│     ██║     ██║   ██║██║  ███╗██║   ██║    ██║   ██║██████╔╝██║   ██║██████╔╝███████╗ │{/green-fg}`,
-    `{green-fg}│     ██║     ██║   ██║██║   ██║██║   ██║    ██║   ██║██╔══██╗██║   ██║██╔═══╝ ╚════██║ │{/green-fg}`,
-    `{green-fg}│     ╚██████╗╚██████╔╝╚██████╔╝╚██████╔╝    ╚██████╔╝██║  ██║╚██████╔╝██║     ███████║ │{/green-fg}`,
-    `{green-fg}│      ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚══════╝ │{/green-fg}`,
-    `{green-fg}│                 The VAPE LABS - CogumellumDROPS                                     │{/green-fg}`,
-    `{cyan-fg}│                                                                                       │{/cyan-fg}`,
-    `{cyan-fg}╰───────────────────────────────────────────────────────────────────────────────────────╯{/cyan-fg}`
+![image](https://github.com/user-attachments/assets/2a0be17a-b6bb-4c87-9c7b-6b201f894095)
 
 # VapeLabs Auto Bot
 
@@ -51,6 +40,20 @@ An automated bot for TheVapeLabs airdrop platform that handles battery tapping, 
    ```
 
 ## Configuration
+
+### How to get the TOKEN
+
+Press F12 or enter developer mode
+now CLICK ON ** NETWORK **
+CLICK on ** Fetch/XHR **
+Refresh the page by clicking F5
+Wait for it to update as soon as ** get ** appears. Look for ** Authorization **
+
+Copy everything except ** BEARER ** at the beginning we won't use it
+Now just paste it into the ** token.txt ** folder on your computer
+
+![image](https://github.com/user-attachments/assets/173c0c7a-1da0-45ef-86e1-60a792e7c1af)
+
 
 ### Token Setup
 
