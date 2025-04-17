@@ -1,97 +1,107 @@
-VapeLabs Auto Bot _ COGUDROPS
-An advanced automated bot for the TheVapeLabs airdrop platform, designed to perform battery tapping, complete daily missions, and manage multiple accounts efficiently. Features a visually enhanced terminal interface with a fixed ASCII banner and real-time status updates.
-Register
-Join TheVapeLabs platform to obtain your tokens:
 
-Register here
+   `{cyan-fg}╭───────────────────────────────────────────────────────────────────────────────────────╮{/cyan-fg}`,
+    `{cyan-fg}│                                                                                       │{/cyan-fg}`,
+    `{green-fg}│      ██████╗ ██████╗  ██████╗ ██╗   ██╗     ██████╗ ██████╗  ██████╗ ██████╗ ███████╗ │{/green-fg}`,
+    `{green-fg}│     ██╔════╝██╔═══██╗██╔════╝ ██║   ██║    ██╔═══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝ │{/green-fg}`,
+    `{green-fg}│     ██║     ██║   ██║██║  ███╗██║   ██║    ██║   ██║██████╔╝██║   ██║██████╔╝███████╗ │{/green-fg}`,
+    `{green-fg}│     ██║     ██║   ██║██║   ██║██║   ██║    ██║   ██║██╔══██╗██║   ██║██╔═══╝ ╚════██║ │{/green-fg}`,
+    `{green-fg}│     ╚██████╗╚██████╔╝╚██████╔╝╚██████╔╝    ╚██████╔╝██║  ██║╚██████╔╝██║     ███████║ │{/green-fg}`,
+    `{green-fg}│      ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚══════╝ │{/green-fg}`,
+    `{green-fg}│                 The VAPE LABS - CogumellumDROPS                                     │{/green-fg}`,
+    `{cyan-fg}│                                                                                       │{/cyan-fg}`,
+    `{cyan-fg}╰───────────────────────────────────────────────────────────────────────────────────────╯{/cyan-fg}`
 
-Features
+# VapeLabs Auto Bot
 
-✅ Auto-Tapping Battery: Automatically taps when battery is below 50% (5 taps every 20 seconds) until it reaches 100%, then waits until it drops below 50% again.
-✅ Multi-Account Support: Manages multiple accounts using token-based authentication, with seamless switching via arrow keys.
-✅ Proxy Support: Rotates IPs using proxies from proxies.txt to avoid rate limiting.
-✅ Daily Check-In Automation: Automatically completes daily check-ins for rewards.
-✅ Automatic Mission Completion: Identifies and completes available tasks across all categories.
-✅ Interactive Terminal UI: Features a fixed ASCII art banner, real-time status panel (uptime, total taps, successful taps), user info, tapping status, and scrollable logs.
-✅ Real-Time Logging: Displays detailed logs with timestamps and status icons (✅, ❌, ⚠️, etc.) for all actions.
-✅ Account Navigation: Switch between accounts using ← and → keys; exit with q.
+An automated bot for TheVapeLabs airdrop platform that handles battery tapping, daily missions, and account management with an enhanced terminal UI featuring a fixed ASCII banner and real-time status updates.
 
-Prerequisites
+## Register
 
-Node.js: Version 16 or higher (tested with v22.14.0). Download Node.js.
-Git: To clone the repository. Download Git.
-Terminal: A terminal that supports colors and resizing (e.g., Windows Terminal, PowerShell, or VS Code terminal).
+- Link : https://bit.ly/4imtfbw
 
-Installation
-Follow these steps to set up and run the bot:
+## Features
 
-Clone the Repository:
-git clone https://github.com/cogumellumdao/VapeLABS.git
-cd TheVapeLabs-Auto-Bot
-
-
-Install Dependencies:Install the required Node.js packages:
-npm install
+-✅ Auto-tapping battery when below 50% until it reaches 100%
+-✅ Multi-account support with token-based authentication
+-✅ Proxy support for rotating IPs
+-✅ Daily check-in automation
+-✅ Automatic mission completion
+-✅ Interactive terminal UI with fixed ASCII banner, real-time status (uptime, taps), and scrollable logs
+-✅ Auto-switching between accounts for monitoring
 
 
-Configure Tokens:Set up your TheVapeLabs tokens (obtained from the platform) using one of the following methods:
-Option 1: Using tokens.txt (Recommended)
-Create a tokens.txt file in the root directory and add one token per line:
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/cogumellumdao/VapeLABS.git
+   cd TheVapeLabs-Auto-Bot
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure your tokens (see Configuration section below)
+
+4. Run the bot:
+   ```bash
+   node index.js
+   ```
+
+## Configuration
+
+### Token Setup
+
+There are two ways to set up your VapeLabs tokens:
+
+#### Option 1: Using tokens.txt file (Recommended)
+
+Create a `tokens.txt` file in the root directory and add one token per line:
+
+```
 token1_here
 token2_here
 token3_here
+```
 
+### Proxy Setup (Optional)
 
-Configure Proxies (Optional):To avoid rate limiting, create a proxies.txt file in the root directory and add one proxy per line in the format ip:port or ip:port:username:password:
+Create a `proxies.txt` file in the root directory and add one proxy per line in the format `ip:port` or `ip:port:username:password`:
+
+```
 http://123.45.67.89:8080
 http://username:password@ip:port
+```
 
+## Usage
 
-Run the Bot:Start the bot with:
-node index.js
+The bot features an interactive terminal UI:
 
+- Use **Arrow Keys** (← →) to navigate between accounts
+- Press **Q** to quit the bot
 
+### Battery Tapping Logic
 
-Usage
-The bot launches an interactive terminal interface with the following components:
+- When battery is **below 50%**, the bot will automatically tap (5 taps every 20 seconds) until it reaches 100%
+- When battery is **100%**, the bot will wait until it drops below 50% to start tapping again
+- When battery is **between 50% and 100%**, the bot will wait until it drops below 50%
 
-Fixed Banner: A stylized ASCII art banner at the top.
-Status Panel: Displays uptime, number of accounts loaded, total taps, and successful taps.
-User Info Panel: Shows account ID, username, points, and battery level.
-Tapping Status Panel: Displays proxy, tapping status, battery level, and time left.
-Log Panel: Scrollable logs with real-time updates and status icons (✅ for success, ❌ for errors, etc.).
-Instructions Panel: Guides navigation and exit commands.
+## Troubleshooting
 
-Controls
+- If you're experiencing rate limiting (429 errors), consider:
+  - Adding more proxies to `proxies.txt`
+  - Increasing the delay between requests
 
-← (Left Arrow) / h: Switch to the previous account.
-→ (Right Arrow) / l: Switch to the next account.
-q / Ctrl+C: Quit the bot.
+## Disclaimer
 
-Battery Tapping Logic
+This project is for educational purposes only. Use at your own risk. The developers are not responsible for any consequences that may arise from using this bot.
 
-Below 50%: Auto-taps (5 taps every 20 seconds) until 100%.
-100%: Stops tapping and waits until battery drops below 50%.
-50% to 99%: Waits until battery drops below 50% before resuming tapping.
+## License
 
-Troubleshooting
-
-Syntax Errors: Ensure the index.js file is not corrupted. Use the provided code if errors occur.
-No Tokens Found: Verify that tokens.txt or .env contains valid tokens.
-Rate Limiting (429 Errors):
-Add more proxies to proxies.txt.
-Increase delays in index.js (e.g., adjust setTimeout in performTapBurst).
-
-
-Interface Issues: Use a terminal that supports ANSI colors and resizing (e.g., Windows Terminal).
-API Errors: Check token validity or API URL (https://api.thevapelabs.net/v1.0).
-
-Disclaimer
-This project is for educational purposes only. Use at your own risk. The developers are not responsible for any consequences arising from the use of this bot.
-License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-💎 Credits 💎 
+## Credits
 
-CogumellumDROPS  COFFEE ADDRESS 😉
-0x3Ecfa30D64A8f4c764d8D58F4F7d8203Bb7fACf0
+CogumellumDROPS COFFEE ADDRESS 😉 ``` 0x3Ecfa30D64A8f4c764d8D58F4F7d8203Bb7fACf0 ´´´
