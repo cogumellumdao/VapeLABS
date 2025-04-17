@@ -35,7 +35,7 @@ An automated bot for TheVapeLabs airdrop platform that handles battery tapping, 
 1. Clone this repository:
    ```bash
    git clone https://github.com/cogumellumdao/VapeLABS.git
-   cd VapeLABS-Auto-Bot
+   cd VapeLABS
    ```
 
 2. Install dependencies:
