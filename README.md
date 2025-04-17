@@ -11,11 +11,17 @@ An automated bot for TheVapeLabs airdrop platform that handles battery tapping, 
 ## Features
 
 -✅ Auto-tapping battery when below 50% until it reaches 100%
+
 -✅ Multi-account support with token-based authentication
+
 -✅ Proxy support for rotating IPs
+
 -✅ Daily check-in automation
+
 -✅ Automatic mission completion
+
 -✅ Interactive terminal UI with fixed ASCII banner, real-time status (uptime, taps), and scrollable logs
+
 -✅ Auto-switching between accounts for monitoring
 
 
